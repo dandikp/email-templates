@@ -2,6 +2,7 @@ const browserSync = require('browser-sync')
 const { src, dest, watch, series, parallel } = require('gulp')
 const fileInclude = require('gulp-file-include')
 const newer = require('gulp-newer')
+const del = require('del')
 
 const paths = {
     src: './src/',
@@ -11,7 +12,7 @@ const paths = {
 }
 
 const clean = (callback) => {
-    del.sync(paths.dist, callback())
+    del([paths.dist], callback())
 }
 
 const html = () => {
@@ -62,6 +63,7 @@ const reloadBrowserSync = (callback) => {
 
 const watchFiles = () => {
     watch(paths.src + '*.html', series([html], reloadBrowserSync))
+    watch(paths.src + 'assets/images/**/*', series([images], reloadBrowserSync))
 }
 
 exports.default = series(html, images, parallel(watchFiles, initBrowserSync))
