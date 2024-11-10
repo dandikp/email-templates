@@ -1,9 +1,10 @@
 @@include('partials/layout-start.html')
+
 <head>
-    @@include("partials/head-meta.html", {"title": "Index"})
+    @@include("partials/head-meta.html", {"title": "Transaction"})
 </head>
 
-<body>
+<body style="margin: 0">
     <table
         role="presentation"
         width="100%"
@@ -39,74 +40,522 @@
                             padding: 16px 24px;
                         "
                     >
-                        <table role="presentation" border="0" cellspacing="0" cellpadding="0">
-                            <tr>
-                                <td>
-                                    <h1
+                        <table
+                            role="presentation"
+                            border="0"
+                            cellspacing="0"
+                            cellpadding="0"
+                            width="100%"
+                        >
+                            <tbody>
+                                <tr>
+                                    <td colspan="2" width="100%">
+                                        <p
+                                            style="
+                                                font-size: 16px;
+                                                font-weight: 600;
+                                                color: #364152;
+                                            "
+                                        >
+                                            Hai Arif,
+                                        </p>
+                                        <p>
+                                            Terima kasih telah berbelanja di Baleomol.com! Kami
+                                            senang memberitahukan Anda bahwa pesanan Anda telah kami
+                                            terima dan sedang diproses. Berikut adalah rincian
+                                            pembayaran Anda:
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <table
+                                            role="presentation"
+                                            border="0"
+                                            cellspacing="0"
+                                            cellpadding="0"
+                                            width="100%"
+                                            style="
+                                                border-radius: 8px;
+                                                background-color: #eef2f6;
+                                                padding: 16px;
+                                            "
+                                        >
+                                            <tbody>
+                                                <tr>
+                                                    <td
+                                                        width="180"
+                                                        style="
+                                                            font-size: 12px;
+                                                            color: #4b5565;
+                                                            vertical-align: center;
+                                                            padding: 8px 0;
+                                                        "
+                                                    >
+                                                        Total Bayar
+                                                    </td>
+                                                    <td
+                                                        style="
+                                                            font-size: 14px;
+                                                            font-weight: 600;
+                                                            color: #0050c1;
+                                                            vertical-align: center;
+                                                            padding: 8px 0;
+                                                        "
+                                                    >
+                                                        Rp 100.000
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td
+                                                        width="180"
+                                                        style="
+                                                            font-size: 12px;
+                                                            color: #4b5565;
+                                                            vertical-align: center;
+                                                            padding: 8px 0;
+                                                        "
+                                                    >
+                                                        Metode Pembayaran
+                                                    </td>
+                                                    <td
+                                                        style="
+                                                            font-size: 14px;
+                                                            font-weight: 600;
+                                                            color: #4b5565;
+                                                            vertical-align: center;
+                                                            padding: 8px 0;
+                                                        "
+                                                    >
+                                                        Bank Transfer
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td
+                                                        width="180"
+                                                        style="
+                                                            font-size: 12px;
+                                                            color: #4b5565;
+                                                            vertical-align: center;
+                                                            padding: 8px 0;
+                                                        "
+                                                    >
+                                                        Waktu Pembayaran
+                                                    </td>
+                                                    <td
+                                                        style="
+                                                            font-size: 14px;
+                                                            font-weight: 600;
+                                                            vertical-align: center;
+                                                            padding: 8px 0;
+                                                        "
+                                                    >
+                                                        Rabu, 13 November 2024, 15:34 WIB
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 16px 8px 16px 0">
+                                        <a
+                                            href="https://baleomol.com"
+                                            style="
+                                                display: block;
+                                                text-decoration: none;
+                                                color: white;
+                                                background-color: #0050c1;
+                                                border-radius: 8px;
+                                                padding: 8px 16px;
+                                                text-align: center;
+                                                font-size: 16px;
+                                                font-weight: 600;
+                                            "
+                                        >
+                                            Lihat Pesanan
+                                        </a>
+                                    </td>
+                                    <td style="padding: 16px 0 16px 8px">
+                                        <a
+                                            href="https://baleomol.com"
+                                            style="
+                                                display: block;
+                                                text-decoration: none;
+                                                background-color: white;
+                                                color: #0050c1;
+                                                border: 1px solid #0050c1;
+                                                border-radius: 8px;
+                                                padding: 8px 16px;
+                                                text-align: center;
+                                                font-size: 16px;
+                                                font-weight: 600;
+                                            "
+                                        >
+                                            Daftar Transaksi
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td
+                                        colspan="2"
                                         style="
-                                            margin: 0;
-                                            color: #364152;
-                                            font-size: 24px;
-                                            line-height: 1.5;
-                                        "
-                                    >
-                                        Halo Arif 👋
-                                    </h1>
-                                    <p style="line-height: 1.5; font-size: 14px; color: #4b5565">
-                                        Selamat datang di Baleomol.com! Kami senang sekali kamu
-                                        bergabung dengan komunitas kami. Di sini, kamu akan
-                                        menemukan beragam produk berkualitas yang akan membuat
-                                        hidupmu lebih mudah, nyaman, dan menyenangkan.
-                                    </p>
-                                    <p
-                                        style="
-                                            line-height: 1.5;
-                                            font-size: 16px;
+                                            border-radius: 8px;
+                                            background-color: #eef2f6;
+                                            padding: 16px;
+                                            font-size: 14px;
                                             color: #4b5565;
-                                            font-weight: 600;
+                                            vertical-align: center;
                                         "
                                     >
-                                        Apa yang bisa Anda nikmati di Baleomol?
-                                    </p>
-                                    <ul style="line-height: 1.5; font-size: 14px; color: #4b5565">
-                                        <li>
-                                            <b>Beragam Pilihan Produk</b>: Temukan produk
-                                            berkualitas dari berbagai kategori.
-                                        </li>
-                                        <li>
-                                            <b>Promo Menarik</b>: Nikmati diskon dan penawaran
-                                            eksklusif yang hanya tersedia untuk member kami.
-                                        </li>
-                                        <li>
-                                            <b>Pengalaman Belanja yang Mudah</b>: Dengan navigasi
-                                            yang simpel, Anda bisa berbelanja dengan cepat dan
-                                            nyaman kapan saja.
-                                        </li>
-                                    </ul>
-                                    <p style="line-height: 1.5; font-size: 14px; color: #4b5565">
-                                        <b>Jangan lupa untuk mengecek</b>
-                                        halaman "Promo Terbaru" kami untuk mendapatkan penawaran
-                                        terbaik dan pastikan Anda tidak melewatkan kesempatan untuk
-                                        menikmati diskon besar!
-                                    </p>
-                                    <p style="line-height: 1.5; font-size: 14px; color: #4b5565">
-                                        Jika ada pertanyaan atau butuh bantuan, tim customer service
-                                        kami siap membantu Anda kapan saja.
-                                    </p>
-                                    <p style="line-height: 1.5; font-size: 14px; color: #4b5565">
-                                        Terima kasih sudah memilih Baleomol.com! Kami berharap
-                                        perjalanan belanja Anda bersama kami menyenangkan dan
-                                        memuaskan.
-                                    </p>
-                                    <p style="line-height: 1.5; font-size: 14px; color: #4b5565">
-                                        Selamat berbelanja! 🛒
-                                    </p>
-                                    <p style="line-height: 1.5; font-size: 14px; color: #4b5565">
-                                        Salam hangat,<br />
-                                        <b>Tim Baleomol</b>
-                                    </p>
-                                </td>
-                            </tr>
+                                        Jangan menginformasikan bukti dan data pembayaran kepada
+                                        pihak manapun kecuali pihak Baleomol.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <p
+                                            style="
+                                                font-size: 16px;
+                                                font-weight: 600;
+                                                color: #364152;
+                                            "
+                                        >
+                                            Rincian Pesanan
+                                        </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" style="padding: 4px 0">
+                                        <table
+                                            role="presentation"
+                                            border="0"
+                                            cellspacing="0"
+                                            cellpadding="0"
+                                            width="100%"
+                                            style="
+                                                border-radius: 4px;
+                                                border: 1px solid #eef2f6;
+                                                padding: 8px 16px;
+                                            "
+                                        >
+                                            <tbody>
+                                                <tr>
+                                                    <td
+                                                        width="90"
+                                                        style="
+                                                            font-size: 12px;
+                                                            color: #4b5565;
+                                                            vertical-align: top;
+                                                            padding: 8px 0;
+                                                        "
+                                                    >
+                                                        <div
+                                                            style="
+                                                                width: 64px;
+                                                                height: 64px;
+                                                                border: 1px solid #eef2f6;
+                                                                border-radius: 2px;
+                                                                overflow: hidden;
+                                                            "
+                                                        >
+                                                            <img
+                                                                src="https://stylesweet.com/wp-content/uploads/2022/06/DripBestButterCake_Featured-500x500.jpg"
+                                                                alt="produk 1"
+                                                                style="
+                                                                    max-width: 100%;
+                                                                    max-height: 100%;
+                                                                "
+                                                            />
+                                                        </div>
+                                                    </td>
+                                                    <td style="vertical-align: top; padding: 8px 0">
+                                                        <span
+                                                            style="
+                                                                font-size: 14px;
+                                                                font-weight: 600;
+                                                                color: #0050c1;
+                                                                margin-top: 0;
+                                                            "
+                                                        >
+                                                            Produk 1
+                                                        </span>
+                                                        <span
+                                                            style="
+                                                                font-size: 12px;
+                                                                color: #697586;
+                                                                font-weight: 400;
+                                                                display: block;
+                                                            "
+                                                        >
+                                                            Ukuran: 10 cm
+                                                        </span>
+                                                        <span
+                                                            style="
+                                                                font-size: 12px;
+                                                                color: #697586;
+                                                                font-weight: 400;
+                                                                display: block;
+                                                            "
+                                                        >
+                                                            Dekorasi: 10 cm
+                                                        </span>
+                                                        <span
+                                                            style="
+                                                                font-size: 14px;
+                                                                color: #4b5565;
+                                                                font-weight: 600;
+                                                                display: block;
+                                                            "
+                                                        >
+                                                            1 x Rp 200.000
+                                                        </span>
+                                                    </td>
+                                                    <td
+                                                        width="120"
+                                                        style="
+                                                            font-size: 14px;
+                                                            font-weight: 600;
+                                                            color: #0050c1;
+                                                            vertical-align: top;
+                                                            padding: 8px 0;
+                                                        "
+                                                    >
+                                                        <span
+                                                            style="
+                                                                font-size: 14px;
+                                                                color: #4b5565;
+                                                                font-weight: 600;
+                                                                display: block;
+                                                                text-align: right;
+                                                            "
+                                                        >
+                                                            Rp 200.000
+                                                        </span>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2" style="padding: 4px 0">
+                                        <table
+                                            role="presentation"
+                                            border="0"
+                                            cellspacing="0"
+                                            cellpadding="0"
+                                            width="100%"
+                                            style="
+                                                border-radius: 4px;
+                                                border: 1px solid #eef2f6;
+                                                padding: 8px 16px;
+                                            "
+                                        >
+                                            <tbody>
+                                                <tr>
+                                                    <td
+                                                        width="90"
+                                                        style="
+                                                            font-size: 12px;
+                                                            color: #4b5565;
+                                                            vertical-align: top;
+                                                            padding: 8px 0;
+                                                        "
+                                                    >
+                                                        <div
+                                                            style="
+                                                                width: 64px;
+                                                                height: 64px;
+                                                                border: 1px solid #eef2f6;
+                                                                border-radius: 2px;
+                                                                overflow: hidden;
+                                                            "
+                                                        >
+                                                            <img
+                                                                src="https://stylesweet.com/wp-content/uploads/2022/06/DripBestButterCake_Featured-500x500.jpg"
+                                                                alt="produk 1"
+                                                                style="
+                                                                    max-width: 100%;
+                                                                    max-height: 100%;
+                                                                "
+                                                            />
+                                                        </div>
+                                                    </td>
+                                                    <td style="vertical-align: top; padding: 8px 0">
+                                                        <span
+                                                            style="
+                                                                font-size: 14px;
+                                                                font-weight: 600;
+                                                                color: #0050c1;
+                                                                margin-top: 0;
+                                                            "
+                                                        >
+                                                            Produk 1
+                                                        </span>
+                                                        <span
+                                                            style="
+                                                                font-size: 12px;
+                                                                color: #697586;
+                                                                font-weight: 400;
+                                                                display: block;
+                                                            "
+                                                        >
+                                                            Ukuran: 10 cm
+                                                        </span>
+                                                        <span
+                                                            style="
+                                                                font-size: 12px;
+                                                                color: #697586;
+                                                                font-weight: 400;
+                                                                display: block;
+                                                            "
+                                                        >
+                                                            Dekorasi: 10 cm
+                                                        </span>
+                                                        <span
+                                                            style="
+                                                                font-size: 14px;
+                                                                color: #4b5565;
+                                                                font-weight: 600;
+                                                                display: block;
+                                                            "
+                                                        >
+                                                            1 x Rp 200.000
+                                                        </span>
+                                                    </td>
+                                                    <td
+                                                        width="120"
+                                                        style="
+                                                            font-size: 14px;
+                                                            font-weight: 600;
+                                                            color: #0050c1;
+                                                            vertical-align: top;
+                                                            padding: 8px 0;
+                                                        "
+                                                    >
+                                                        <span
+                                                            style="
+                                                                font-size: 14px;
+                                                                color: #4b5565;
+                                                                font-weight: 600;
+                                                                display: block;
+                                                                text-align: right;
+                                                            "
+                                                        >
+                                                            Rp 200.000
+                                                        </span>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <table
+                                            role="presentation"
+                                            border="0"
+                                            cellspacing="0"
+                                            cellpadding="0"
+                                            width="100%"
+                                        >
+                                            <tr>
+                                                <td colspan="2">
+                                                    <p
+                                                        style="
+                                                            font-size: 16px;
+                                                            font-weight: 600;
+                                                            color: #364152;
+                                                        "
+                                                    >
+                                                        Rincian Bayar
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td
+                                                    style="
+                                                        font-size: 14px;
+                                                        color: #4b5565;
+                                                        vertical-align: center;
+                                                        padding: 8px 0;
+                                                    "
+                                                >
+                                                    Subtotal
+                                                </td>
+                                                <td
+                                                    style="
+                                                        text-align: right;
+                                                        font-size: 14px;
+                                                        color: #4b5565;
+                                                        vertical-align: center;
+                                                        padding: 8px 0;
+                                                    "
+                                                >
+                                                    200.000
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td
+                                                    style="
+                                                        font-size: 14px;
+                                                        color: #4b5565;
+                                                        vertical-align: center;
+                                                        padding: 8px 0;
+                                                    "
+                                                >
+                                                    Diskon
+                                                </td>
+                                                <td
+                                                    style="
+                                                        text-align: right;
+                                                        font-size: 14px;
+                                                        color: #4b5565;
+                                                        vertical-align: center;
+                                                        padding: 8px 0;
+                                                    "
+                                                >
+                                                    0
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td
+                                                    colspan="2"
+                                                    style="
+                                                        border-top: 1px solid #eef2f6;
+                                                        padding-bottom: 8px;
+                                                    "
+                                                ></td>
+                                            </tr>
+                                            <tr>
+                                                <td
+                                                    style="
+                                                        font-size: 14px;
+                                                        color: #4b5565;
+                                                        vertical-align: center;
+                                                        padding: 8px 0;
+                                                    "
+                                                >
+                                                    Total
+                                                </td>
+                                                <td
+                                                    style="
+                                                        text-align: right;
+                                                        font-size: 14px;
+                                                        color: #4b5565;
+                                                        font-weight: 600;
+                                                        display: block;
+                                                        text-align: right;
+                                                    "
+                                                >
+                                                    Rp 200.000
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
                         </table>
                     </div>
                 </td>
@@ -119,7 +568,10 @@
                     align="center"
                     style="font-size: 14px; line-height: 1.5; color: #697586; padding: 16px"
                 >
-                    &copy; 2024 <a style="">Baleomol.com</a>
+                    &copy; 2024
+                    <a href="https://baleomol.com" style="color: #4b5565; text-decoration: none">
+                        Baleomol.com
+                    </a>
                 </td>
                 <td></td>
             </tr>
